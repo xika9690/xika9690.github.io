@@ -1,0 +1,27 @@
+h1{
+  font-family: sans-serif;
+}
+
+div{
+  font-size: 110%;
+}
+
+#l1:hover{
+  color:#FCC4A7;
+}
+
+#l2:hover{
+  color: white;
+  background-color:#79809D;
+}
+
+#l4:hover{
+  color:#FF5959;
+  font-size: 500%;
+}
+
+#l6:hover{
+  color:#52D64B;
+  font-size: 500%;
+
+}

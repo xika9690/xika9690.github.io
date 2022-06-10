@@ -1,0 +1,41 @@
+/*exercise6*/
+
+.mainBox{
+  color: ;
+  background-color;
+  width: auto;
+  height: auto;
+  border: .1em dotted #A0ADB6;
+  padding: 1em;
+  margin: 2em;
+}
+
+p{
+  font-family: "times new roman", serif;
+}
+
+.blueText{
+  color: #4E94C7;
+}
+
+table, tr, th, td{
+  text-align:center;
+  width:auto;
+  height:auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: .5em 2em .5em 2em;
+}
+
+th{
+  font-family: arial, hevetica, sans-serif;
+}
+
+td{
+  text-align:left;
+  padding: auto;
+}
+
+h1{
+  font-family: arial, hevetica, sans-serif;
+}

@@ -1,0 +1,75 @@
+/*exercise7*/
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu content1 content1 content1 content1 content1'
+    'menu content2 content2 content2 content2 content2'
+    'menu content3 content3 content3 content3 content3'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #A0ADB6;
+  padding: 10px;
+}
+
+.grid-container>div{ /* select all divs inside the class */
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 20px;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: content1;
+}
+
+.item4 {
+  grid-area: content2;
+}
+
+.item5 {
+  grid-area: content3;
+}
+
+.item6 {
+  grid-area: footer;
+}
+
+ul, li{
+  text-align: left
+}
+.blueText{
+  color: #4E94C7;
+}
+
+@media screen and (max-width: 992px) {
+  img{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to red */
+@media screen and (max-width: 600px) {
+  img{
+    width: 125px;
+    height: 125px;
+  }
+}
+
+h1{
+  font-family: arial, hevetica, sans-serif;
+}
+
+p{
+  font-family: "times new roman", serif;
+}

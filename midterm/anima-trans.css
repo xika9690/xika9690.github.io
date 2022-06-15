@@ -1,0 +1,44 @@
+/*index*/
+
+.parent{
+  background-color: green;
+}
+
+#bear{
+  vertical-align: bottom;
+  padding: 0pt;
+}
+.parent:hover #bear{
+  /* @keyframes duration | easing-function |  direction | repeat | play-state  */
+  animation: bearSign 5s linear forwards infinite;
+
+}
+
+@keyframes bearSign{
+  0%{
+    transform:translate(0px);
+  }
+  25%{
+    transform:translate(-50px);
+  }
+  50%{
+    transform:translate(0px);
+  }
+  75%{
+    transform:translate(50px);
+  }
+  100%{
+    transform:translate(0px);
+  }
+}
+/*
+animation-name: bearSign;
+anim */
+/* .parent:hover .leftS{
+  transform: translateX(100%);
+  animation: left-to-right 1s ease-in;
+}
+
+@keyframes left-to-right {
+    100% {translatex(100%);}
+} */

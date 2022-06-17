@@ -1,5 +1,6 @@
 /*layout*/
 
+/*css grid*/
 .grid-container{
   display: grid;
   grid-template-areas:
@@ -10,59 +11,97 @@
   background-color: black; /*outline*/
   padding: 5px;
 }
-
 .grid-container>div{ /* select all divs inside the class */
   background-color: white;
   text-align: center;
   vertical-align: center;
-  padding: 10px 5px;
+  padding: 10px 10px;
   /* background-color: blue; */
 }
-
 .item1{
   grid-area: header;
   height: 50px;
   vertical-align: top;
-
 }
-
 .item2{
   grid-area: content;
   height: 400px;
 }
-
 .item3{
   grid-area: footer;
   height: 100px;
 
 }
 
+/*text look*/
+p{
+  font-size: 16pt;
+  line-height: 1.3;
+}
 a:link{
   color: black;
+  font-size: 20pt;
   text-decoration: none;
 }
 
+/*hyperlink*/
+h1{
+  margin: 5pt;
+  /* font-size: 24pt; */
+
+}
 a:visited{
   color: black;
   text-decoration: none;
 }
-
 a:active{
   color: black;
   text-decoration: none;
 }
 
-.clickable:hover{
-  text-decoration: none;
-  color: blue;
-  font-size: 150%;
-  transition: .5s;
+/*images*/
+.bgImg{
+  position: absolute;
+  /* height:500px; */
+  /* top: 30px; */
+  /* left: middle; */
+    left: calc(50% - 227px);
+  /* margin-left: -21pt; */
+  z-index: 1;
 }
-
-h1{
-  margin: 5pt;
+.frontImg{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
-
-p{
-  font-size: 16pt;
+#forestB{/*pg1*/
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 227px);
+  z-index: 3;
+}
+#forest2B{/*pg2*/
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 227px);
+  z-index: 3;
+}
+#hallway2{/*pg5*/
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 227px);
+  z-index: 3;
+}
+#hallwayBear{/*pg5*/
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 245px);
+  z-index: 4;
+}
+#jailB{/*pg10*/
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 227px);
+  z-index: 3;
 }

@@ -1,0 +1,239 @@
+/*index*/
+
+/* 4-11 all pgs, footer hyperlinks grow & turn blue - WORKS*/
+.clickable{
+  transition: .5s;
+}
+.clickable:hover{
+  text-decoration: none;
+  color: blue;
+  font-size: 150%;
+}
+
+/*14-42 index, bears move left to right - WORKS*/
+.parentC{
+  /* background-color: green; */
+  position: relative;
+}
+#bear{
+  vertical-align: bottom;
+  padding: 0pt;
+}
+.parentC #bear{
+  /* @keyframes duration | easing-function |  direction | repeat | play-state  */
+  animation: bearSign 5s linear forwards infinite;
+}
+@keyframes bearSign{
+  0%{
+    transform:translate(0px);
+  }
+  25%{
+    transform:translate(-50px);
+  }
+  50%{
+    transform:translate(0px);
+  }
+  75%{
+    transform:translate(50px);
+  }
+  100%{
+    transform:translate(0px);
+  }
+}
+
+/*45-62 pg5, snoring sound moves - WORKS*/
+#zzz{
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 227px);
+  z-index: 2;
+}
+.parentC #zzz{
+  animation: snoring 3s linear forwards infinite;
+}
+@keyframes snoring{
+  0%{
+    transform:translate(134px, -100px);
+  }
+  100%{
+    transform:translate(30px, -100px);
+    opacity: 100%;
+  }
+}
+
+/*65-85 pg6, snoring sound moves - WORKS*/
+#zzz2{
+  vertical-align: bottom;
+  padding: 0pt;
+}
+.parentC #zzz2{
+  /* @keyframes duration | easing-function |  direction | repeat | play-state  */
+  animation: snoring2 7s linear forwards infinite;
+}
+@keyframes snoring2{
+  0%{
+    transform:translate(-50px, 25px);
+  }
+  50%{
+    transform:translate(0px);
+
+  }
+  100%{
+    transform:translate(50px, -20px);
+    opacity: 100%;
+  }
+}
+
+/*88-119 pg7, yell speech bubble moves - WORKS*/
+#choiceImg1{/*yell*/
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 227px);
+  z-index: 2;
+}
+.parentC #choiceImg1{
+  animation: rocking1 7s linear forwards infinite;
+}
+@keyframes rocking1{
+  0%{
+    transform-origin: 244px 200px;
+    /* transform-origin: 80px 159px; */
+    transform:rotate(0deg);
+  }
+  25%{
+    transform-origin: 244px 200px;
+    transform:rotate(15deg);
+  }
+  50%{
+    transform-origin: 244px 200px;
+    transform:rotate(0deg);
+  }
+  75%{
+    transform-origin: 244px 200px;
+    transform:rotate(-15deg);
+  }
+  100%{
+    transform-origin: 244px 200px;
+    transform:rotate(0deg);
+  }
+}
+
+/*122-152 pg7, knife moves - WORKS*/
+#choiceImg2{/*knife*/
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 227px);
+  z-index: 3;
+}
+.parentC #choiceImg2{
+  animation: rocking2 3s linear forwards infinite;
+}
+@keyframes rocking2{
+  0%{
+    transform-origin: 80px 159px;
+    transform:rotate(0deg);
+  }
+  25%{
+    transform-origin: 80px 159px;
+    transform:rotate(15deg);
+  }
+  50%{
+    transform-origin: 80px 159px;
+    transform:rotate(0deg);
+  }
+  75%{
+    transform-origin: 80px 159px;
+    transform:rotate(-20deg);
+  }
+  100%{
+    transform-origin: 80px 159px;
+    transform:rotate(0deg);
+  }
+}
+
+/*155-185 pg7, phone moves - WORKS*/
+#choiceImg3{/*phone*/
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 227px);
+  z-index: 4;
+}
+.parentC #choiceImg3{
+  animation: rocking3 5s linear forwards infinite;
+}
+@keyframes rocking3{
+  0%{
+    transform-origin: 286px 84px;
+    transform:rotate(0deg);
+  }
+  25%{
+    transform-origin: 286px 84px;
+    transform:rotate(-13deg);
+  }
+  50%{
+    transform-origin: 286px 84px;
+    transform:rotate(0deg);
+  }
+  75%{
+    transform-origin: 286px 84px;
+    transform:rotate(20deg);
+  }
+  100%{
+    transform-origin: 286px 84px;
+    transform:rotate(0deg);
+  }
+}
+
+/*188-217 pg8, girl running - WORKS*/
+#girl{
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 228px);
+  z-index: 2;
+}
+.parentC:hover #girl{
+  animation: runningGirl 1s linear forwards 1;
+}
+@keyframes runningGirl{
+  0%{
+    transform:translate(0px, 0px);
+  }
+  15%{
+    transform:translate(0px, 0px);
+    opacity: 100%;
+  }
+  30%{
+    transform:translate(-25px, 25px);
+    opacity: 100%;
+  }
+  99%{
+    transform:translate(-370px, 25px);
+    opacity: 100%;
+  }
+  100%{
+    transform:translate(-370px, 25px);
+    opacity: 0%;
+  }
+}
+
+/*188-217 pg10, girl and cop moves - WORKS?*/
+#girlCop{
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 228px);
+  z-index: 2;
+}
+.parentC:hover #girlCop{
+  animation: girlArrested 5s linear forwards 1;
+}
+@keyframes girlArrested{
+  0%{
+    transform:translate(0px, 0px);
+  }
+  70%{
+    transform:translate(-230px, 0px);
+  }
+  100%{
+    transform:translate(-250px, -50px);
+  }
+}

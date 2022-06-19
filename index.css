@@ -1,22 +1,14 @@
 /*homepage*/
 
+/*text look*/
 h1{ /*header*/
   font-family: arial, helvetica, sans-serif;
 }
-
-h2{
-  transition: .5s;
-}
-h2:hover{ /*"class name"*/
-  color:red;
-  font-family: "times new roman", serif;
-  font-size: 200%;
-}
-
 p{ /*"class exercise"*/
   font-size: 24px;
 }
 
+/*hyperlink*/
 a:link{ /*unvisited hyperlink*/
   color: #ED9005;
   font-family: arial, helvetica, sans-serif
@@ -28,6 +20,7 @@ a:hover { /*hover hyperlink*/
   color: white;
 }
 
+/*button for exercises*/
 .button{ /*exercise buttons*/
   background-color: #F2FAFF;
   border: .1em solid black;
@@ -37,10 +30,12 @@ a:hover { /*hover hyperlink*/
   font-size: 16px;
   margin: .1em .25em 1em .25em;
   cursor: pointer;
+  /* transition: .5s; */
 }
 .button:hover{ /*hover exercise buttons*/
   background-color: #4E94C7;
   border: .1em dotted black;
   /* font-weight: bold; */
+  text-decoration: none;
   cursor: pointer;
 }

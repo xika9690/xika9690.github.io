@@ -1,0 +1,10 @@
+/*homepage animations*/
+
+h2{
+  transition: .5s;
+}
+h2:hover{ /*"class name"*/
+  color:red;
+  font-family: "times new roman", serif;
+  font-size: 200%;
+}

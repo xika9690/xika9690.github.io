@@ -2,6 +2,7 @@
 
 /* 4-11 all pgs, footer hyperlinks grow & turn blue - WORKS*/
 .clickable{
+  font-size: 20pt;
   transition: .5s;
 }
 .clickable:hover{

@@ -34,21 +34,20 @@
 }
 
 /*text look*/
+h1{
+  margin: 5pt;
+  /* font-size: 24pt; */
+}
 p{
   font-size: 16pt;
   line-height: 1.3;
 }
+
+/*hyperlink*/
 a:link{
   color: black;
   font-size: 20pt;
-  text-decoration: none;
-}
-
-/*hyperlink*/
-h1{
-  margin: 5pt;
-  /* font-size: 24pt; */
-
+  text-decoration: underline;
 }
 a:visited{
   color: black;

@@ -1,0 +1,36 @@
+<!doctype html> <!--exercise11-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>MadLib</title>
+        <style>
+          body{
+            font-size: 20pt;
+            margin: 50px 100px;
+            background-color: pink;
+            font-family: helvetica;
+          }
+        </style>
+        <script type="text/javascript">
+          var nextItem = [];
+          nextItem[0] = prompt("Enter your Name.");
+          nextItem[1] = prompt("Enter a place.");
+          nextItem[2] = prompt("Enter a noun.");
+          nextItem[3] = prompt("Enter a Letter from A-F.");
+
+          for (var i = 0; i < nextItem.length; i++){
+            nextItem[i];
+          }
+
+          var date = new Date();
+          var d = `Date: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
+          var madLib = `${d} <br><br> ${nextItem[0]} is authorized to be at ${nextItem[1]} instead of ${nextItem[2]} class.
+          ${nextItem[0]} is at ${nextItem[2]} class because they have a finals test.
+          ${nextItem[0]}'s final grade for ${nextItem[2]} was ${nextItem[3]}.`;
+
+          document.write(madLib);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

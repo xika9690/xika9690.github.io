@@ -1,0 +1,46 @@
+.item1{
+  /* grid-area: header; */
+  height: 65px;
+  text-align: center;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+}
+.quote{
+  /* grid-area: content; */
+  height: 300px;
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding: 10px 15px;
+
+}
+.item3{
+  /* grid-area: footer; */
+  height: 30px;
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding: 5px 10px;
+}
+
+/*text look*/
+h1{
+  font-size: 32pt;
+  margin: 5pt;
+  font-family: baskerville, "times new roman", serif;
+}
+#bgColor{
+  background-color: white;
+}
+#js-quote-text{
+  font-size: 24pt;
+}
+button{
+  font-size: 16pt;
+  background-color: yellow;
+  border-color: yellow;
+}

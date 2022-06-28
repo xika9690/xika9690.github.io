@@ -1,10 +1,150 @@
 /*homepage animations*/
 
 h2{
+  font-size: 23pt;
+  margin: 10px 5px;
   transition: .5s;
 }
-h2:hover{ /*"class name"*/
-  color:red;
+#heading{
+  color: white;
+  text-shadow: 0 0 3px black;
+  padding:0px 10px;
+  position: absolute;
+  z-index: 4;
+}
+#parentC:hover #heading{
+  text-shadow: 0 0 30px black;
   font-family: "times new roman", serif;
-  font-size: 200%;
+  /* font-size: 200%; */
+  font-size: 25pt;
+}
+
+@media (min-width: 1px){
+  #parentC #girl{
+    animation: girlRunning 15s linear forwards infinite;
+  }
+  @keyframes girlRunning{
+    0% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    10% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    84% {
+      transform: rotateY(0deg);
+    }
+    85% {
+      left: 770px;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: -180px;
+      transform: rotateY(0deg);
+    }
+  }
+  #parentC #bears{
+    animation: bearsRunning 15s linear forwards infinite;
+  }
+  @keyframes bearsRunning{
+    0% {
+      left: 890px;
+    }
+    85% {
+      left: 890px;
+    }
+    100% {
+      left: -180px;
+    }
+  }
+}
+@media (min-width: 768px){
+  #parentC #girl{
+    animation: girlRunning 20s linear forwards infinite;
+  }
+  @keyframes girlRunning{
+    0% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    10% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    84% {
+      transform: rotateY(0deg);
+    }
+    85% {
+      left: 1030px;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: -180px;
+      transform: rotateY(0deg);
+    }
+  }
+  #parentC #bears{
+    animation: bearsRunning 20s linear forwards infinite;
+  }
+  @keyframes bearsRunning{
+    0% {
+      left: 1150px;
+    }
+    85% {
+      left: 1150px;
+    }
+    100% {
+      left: -180px;
+    }
+  }
+}
+@media (min-width: 1024px){
+  #parentC #girl{
+    animation: girlRunning 25s linear forwards infinite;
+  }
+  @keyframes girlRunning{
+    0% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    10% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    84% {
+      transform: rotateY(0deg);
+    }
+    85% {
+      left: 1400px;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: -180px;
+      transform: rotateY(0deg);
+    }
+  }
+  #parentC #bears{
+    animation: bearsRunning 25s linear forwards infinite;
+  }
+  @keyframes bearsRunning{
+    0% {
+      left: 1520px;
+    }
+    85% {
+      left: 1520px;
+    }
+    100% {
+      left: -180px;
+    }
+  }
 }

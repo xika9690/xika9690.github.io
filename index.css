@@ -1,11 +1,14 @@
 /*homepage*/
 
 /*text look*/
-h1{ /*header*/
+h1{
   font-family: arial, helvetica, sans-serif;
+  text-align: center;
+  margin: 20px 5px;
 }
 p{ /*"class exercise"*/
   font-size: 24px;
+  margin: 10px 5px;
 }
 
 /*hyperlink*/
@@ -38,4 +41,30 @@ a:hover { /*hover hyperlink*/
   /* font-weight: bold; */
   text-decoration: none;
   cursor: pointer;
+}
+
+/*imgs*/
+#parentC{
+  height:100px;
+  margin: 0px 5px;
+  overflow: clip;
+  position: relative;
+}
+#bgImg{
+  position: absolute;
+  z-index: 1;
+}
+#girl{
+  position: absolute;
+  left: -80px;
+  z-index: 2;
+}
+#bears{
+  position: absolute;
+  left: -180px;
+  z-index: 2;
+}
+#forestB{
+  position: absolute;
+  z-index: 3;
 }

@@ -1,0 +1,208 @@
+/*index.html*/
+#indexBody{
+  background-color: #037c6e;
+}
+#intro{
+  background-color: white;
+  font-family: baskerville, "times new roman", serif;
+  font-weight: bold;
+  font-size: 24pt;
+  letter-spacing: .5px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 10px 20px;
+  border-style: solid;
+}
+.words{
+  color: #025043;
+  background-color: white;
+  text-decoration: underline;
+  font-size: 20pt;
+  letter-spacing: .5px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 6px 20px;
+  border-style: dotted solid;
+  border-color: black;
+}
+#button1{
+  background-color: white;
+  font-family: baskerville, "times new roman", serif;
+  font-size: 20pt;
+  letter-spacing: .5px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 10px 20px;
+  border-style: solid;
+}
+#makeStory:link{
+  color: black;
+  text-decoration: none;
+}
+#makeStory:visited{
+  color: black;
+  text-decoration: none;
+}
+#makeStory:hover{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+#name{
+  border-style: solid solid dotted solid;
+  border-color: black;
+}
+#verb2{
+  border-style: dotted solid solid solid;
+  border-color: black;
+}
+
+/*story.html*/
+#storyBody{
+  background-color: #b3e0dc;
+}
+#title{
+  color: white;
+  background-color: #025043;
+  font-family: baskerville, "times new roman", serif;
+  font-weight: bold;
+  font-size: 24pt;
+  letter-spacing: .5px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 10px 20px;
+}
+#story{
+  background-color: white;
+  font-size: 16pt;
+  line-height: 24pt;
+  letter-spacing: .5px;
+  text-align: left;
+  margin: 0px 5px;
+  padding: 10px 25px;
+}
+#button2{
+  background-color: #025043;
+  font-family: baskerville, "times new roman", serif;
+  font-size: 20pt;
+  letter-spacing: .5px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 10px 20px;
+}
+#button2HL:link{
+  color: white;
+  text-decoration: none;
+}
+#button2HL:visited{
+  color: white;
+  text-decoration: none;
+}
+#button2HL:hover{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+span{
+  color: #037c6e;
+  /* color: blue; */
+  font-weight: bold;
+}
+
+/*imgs in story.html*/
+#parentC{
+  height:100px;
+  margin: 0px 5px;
+  overflow: clip;
+  position: relative;
+}
+#bgImg{
+  position: absolute;
+  z-index: 1;
+}
+#girl{
+  position: absolute;
+  left: -60px;
+  z-index: 2;
+}
+#forestB{
+  position: absolute;
+  z-index: 3;
+}
+
+/*animation in story.html*/
+@media (min-width: 1px){
+  #parentC #girl{
+    animation: girlRunning 15s linear forwards infinite;
+  }
+  @keyframes girlRunning{
+    0% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    84% {
+      transform: rotateY(0deg);
+    }
+    85% {
+      left: 770px;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+  }
+}
+@media (min-width: 768px){
+  #parentC #girl{
+    animation: girlRunning 20s linear forwards infinite;
+  }
+  @keyframes girlRunning{
+    0% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    84% {
+      transform: rotateY(0deg);
+    }
+    85% {
+      left: 1030px;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+  }
+}
+@media (min-width: 1024px){
+  #parentC #girl{
+    animation: girlRunning 25s linear forwards infinite;
+  }
+  @keyframes girlRunning{
+    0% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+    84% {
+      transform: rotateY(0deg);
+    }
+    85% {
+      left: 1400px;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: -80px;
+      transform: rotateY(0deg);
+    }
+  }
+}
